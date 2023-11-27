@@ -10,13 +10,46 @@
 
 <body>
 
-    <div
-        style="display: flex; align-items: center; flex-direction: column; width: 500px; margin: 0 auto; border: 5px; padding: 50px; height: 300px; background-color: antiquewhite; ">
-        UserName<input type="text" name="UserName" id="UserName">
-        Email<input type="email" name="Email" id="Email">
-        Password<input type="password" name="Password" id="Password">
-        CPassword<input type="password" name="CPassword" id="CPassword">
-        <button onclick="signUpHandler()">Submit</button>
+
+<!-- navBar -->
+<header>
+    <div class="logo"><i>Responsive Nav-Bar</i></div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">LogOut</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Form  -->
+
+    <div class="regForm">
+        UserName<input type="text" name="UserName" id="UserName" placeholder="User Name">
+        Email<input type="email" name="Email" id="Email" placeholder="Email">
+        Password<input type="password" name="Password" id="Password" placeholder="Password">
+        CPassword<input type="password" name="CPassword" id="CPassword" placeholder="Confirm Password">
+        <button class="submit" onclick="signUpHandler()">Submit</button>
     </div>
 
 
