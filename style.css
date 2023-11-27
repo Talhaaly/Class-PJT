@@ -131,20 +131,39 @@ header {
 }
 
 
+
+
 /* regForm  */
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 .regForm {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 60px;
+}
+.form-Style {
+    background-color: #11101b;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 input {
     width: 300px;
     padding: 5px;
     border-radius: 5px;
+    margin: 10px;
 }
 
 .submit {
