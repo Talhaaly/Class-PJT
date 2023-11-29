@@ -5,40 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Project</title>
+    <title>Signup</title>
 </head>
 
 <body>
-
-<h1 class="heading">Registration Form</h1>
-
-<!-- Form  -->
-
-    <div class="regForm">
-        <form action="#" class="form-Style">
-            <label for="">
-        UserName:<input type="text" name="UserName" id="userName" placeholder="User Name"><br>
-        EmailAdress:<input type="email" name="Email" id="email" placeholder="email"><br>
-        Password:<input style="width: 320;" type="password" name="password" id="password" placeholder="Password"><br>
-        CPassword:<input type="password" name="CPassword" id="cPassword" placeholder="Confirm Password"><br>
-        <button class="submit" onclick="signupHandler()">Submit</button>
-    </label>
-    </form>
+    <div style="display: flex; flex-direction: column; width: 500px; margin: 0 auto; background-color: antiquewhite; border-radius: 20px; padding: 20px; align-items: center;">
+        <h2>Signup Form</h2>
+        UserName: <input type="text" id="userName"> 
+        Email: <input type="email" name="" id="email"> 
+        Password: <input type="text" id="password">
+        Confirm Password: <input type="text" id="cPassword">
+        <button onclick="signupHandler()">Submit</button>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="app.js"></script>
 </body>

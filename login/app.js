@@ -3,7 +3,7 @@ const password = document.getElementById('password')
 
 const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'))
 
-if(loggedInUser) window.location.href = '../home/home.html'
+if(loggedInUser) window.location.href = '../home/index.html'
 
 
 
@@ -32,7 +32,7 @@ const loginHandler = () => {
     localStorage.setItem('loggedInUser', JSON.stringify(foundUser))
 
     setTimeout(() => {
-        window.location.href = '../home/home.html'
+        window.location.href = '../home/index.html'
     }, 2000)
 
 
