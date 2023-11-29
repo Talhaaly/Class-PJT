@@ -9,15 +9,16 @@
 </head>
 
 <body>
-    <div style="display: flex; flex-direction: column; width: 500px; margin: 0 auto; background-color: antiquewhite; border-radius: 20px; padding: 20px; align-items: center;">
+    <div class="container">
+    <div class="form" style="display: flex; flex-direction: column; width: 500px; margin: 0 auto; background-color: rgb(231, 223, 238); border-radius: 20px; padding: 20px; align-items: center;">
         <h2>Signup Form</h2>
         UserName: <input type="text" id="userName"> 
         Email: <input type="email" name="" id="email"> 
         Password: <input type="text" id="password">
         Confirm Password: <input type="text" id="cPassword">
-        <button onclick="signupHandler()">Submit</button>
+        <button style="margin-top: 10px; padding: 5px; width: 150px;" onclick="signupHandler()"><b>Submit</b></button>
     </div>
-
+</div>
     <script src="app.js"></script>
 </body>
 
