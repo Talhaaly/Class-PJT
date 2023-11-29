@@ -13,7 +13,7 @@ const signupHandler = () => {
     console.log(users, "-====>>> users")
     
     //checking fields
-    if (!userName.value || !email.value || !password.value || !cPassword.value) return alert('Saari fields likh bhai')
+    if (!userName.value || !email.value || !password.value || !cPassword.value) return alert('Input fields not completed, please complete all fields.')
     //checking length
 
     if (password.value.length < 8) return alert('password length should be atleast 8 characters')
