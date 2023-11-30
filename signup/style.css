@@ -6,6 +6,7 @@ body {
 
 input {
     width: 100%;
+    padding: 8px;
 }
 
 .form {
@@ -18,7 +19,7 @@ input {
 
 .form :hover{
 
-    background-color: rgb(234, 231, 238);
+    background-color: rgb(163, 158, 169);
     border-radius: 5px;
 
 }
