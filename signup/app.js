@@ -18,7 +18,7 @@ const signupHandler = () => {
 
     if (password.value.length < 8) return alert('password length should be atleast 8 characters')
     //checking password and cPassword
-    if (password.value != cPassword.value) return alert('same password confirm password likh bhai')
+    if (password.value != cPassword.value) return alert(' password confirm password  are not same')
 
     const userNameFound = users.find((user)=> {
         if(user.userName === userName.value) return user
@@ -26,7 +26,7 @@ const signupHandler = () => {
 
     if(userNameFound) return alert("UserName already taken")
     
-    const userEmailFound = users.find((user)=> {
+    const userEmailFound = users.find((user)=> { 
         if(user.email === email.value) return user
     })
 
