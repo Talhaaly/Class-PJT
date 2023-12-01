@@ -5,32 +5,32 @@ const cPassword = document.getElementById('cPassword')
 
 const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'))
 
-if(loggedInUser) window.location.href = '../home/index.html'
+if (loggedInUser) window.location.href = '../home/index.html'
 
 const signupHandler = () => {
 
     const users = JSON.parse(localStorage.getItem('users')) || []
     console.log(users, "-====>>> users")
-    
+
     //checking fields
     if (!userName.value || !email.value || !password.value || !cPassword.value) return alert('Input fields not completed, please complete all fields.')
     //checking length
 
     if (password.value.length < 8) return alert('password length should be atleast 8 characters')
     //checking password and cPassword
-    if (password.value != cPassword.value) return alert(' password confirm password  are not same')
+    if (password.value != cPassword.value) return alert('password and confirm password is not same')
 
-    const userNameFound = users.find((user)=> {
-        if(user.userName === userName.value) return user
+    const userNameFound = users.find((user) => {
+        if (user.userName === userName.value) return user
     })
 
-    if(userNameFound) return alert("UserName already taken")
-    
-    const userEmailFound = users.find((user)=> { 
-        if(user.email === email.value) return user
+    if (userNameFound) return alert("UserName already taken")
+
+    const userEmailFound = users.find((user) => {
+        if (user.email === email.value) return user
     })
 
-    if(userEmailFound) return alert("UserEmail already exist")
+    if (userEmailFound) return alert("UserEmail already exist")
 
 
 

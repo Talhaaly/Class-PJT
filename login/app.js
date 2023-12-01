@@ -12,7 +12,10 @@ const loginHandler = () => {
     const users = JSON.parse(localStorage.getItem('users'))
 
     //checking fields
+
+    if (!email.value || !password.value) return alert(' fields not completed')
     if (!email.value || !password.value) return alert('Inputs fields not completed')
+
     //checking length
 
     if (password.value.length < 8) return alert('password length should be atleast 8 characters')
